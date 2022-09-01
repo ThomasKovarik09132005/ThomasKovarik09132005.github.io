@@ -2,16 +2,80 @@
 <html>
     <head>
     <title>A website about fighting bugs</title>
+    <style>
+        body {
+            background: rgb(16, 111, 219);
+            color: rgb(36, 23, 23);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+          max-width: 800px;
+            margin: auto;
+        }
+     
+        /* navigation menu */
+        nav {
+            background: rgb(16, 179, 65);
+           margin: 0 auto;
+           margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.377);
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(101, 255, 29);
+        }
+     
+        /* main container area beneath menu */
+        main {
+            background: rgb(151, 10, 81);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px rgb(116, 45, 197) ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+     </style>
     </head>
     
     <body>
-    <div>
+    <div id="all-contents">
         <nav>
             <h1>
             Website about fighting bugs
             </h1>
-            <ul>
-                <li>
+            <ul id="nav-id">
+                <li id="nav-li">
                     <a href="index.html">home</a>
             </li>
             <li>
@@ -19,16 +83,16 @@
             </li>
             </ul>
         <main>
-
-        <div>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEUAAP99ff+MjP+bm/+rq/+4uP+2tv+pqf+Kiv+Bgf/Z2f90dP94eP/8/P/z8//k5P/Pz//IyP+ysv+Rkf+Vlf+goP+urv+kpP+Ojv/Q7Co7AAABmUlEQVR4nO3dS04DMRAG4e5kJm8eCUng/ieFBQvEhgip1apxfb7AX0tLlhxPzy+H1/N5nufLNE3b9be31U+7/Lf96k/X9QNu0wPu82+bQ1xi2Y4xdU8olgMUvndPKJax7p5QzEI+C/ks5LOQz0K+EQqv3ROKZay6JxSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5RijcdU8oll9n2Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5DPQr6MffeEYiO8GFr+qy8L6Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5Av46N7QrER/pmxkM5CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkG+Ewlv3hGIZ2+4JxTKm7gnFLOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOTLuHdPKJax6Z5QLGPunlDMQj4L+Szks5DPQj4L+SzkG6Fw6TfgUxyOuWSn+RNFSAfbc4zH5wAAAABJRU5ErkJggg==">
+sidebar 
+        <div class="sidebar">
+            <img id=sidebar-img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEUAAP99ff+MjP+bm/+rq/+4uP+2tv+pqf+Kiv+Bgf/Z2f90dP94eP/8/P/z8//k5P/Pz//IyP+ysv+Rkf+Vlf+goP+urv+kpP+Ojv/Q7Co7AAABmUlEQVR4nO3dS04DMRAG4e5kJm8eCUng/ieFBQvEhgip1apxfb7AX0tLlhxPzy+H1/N5nufLNE3b9be31U+7/Lf96k/X9QNu0wPu82+bQ1xi2Y4xdU8olgMUvndPKJax7p5QzEI+C/ks5LOQz0K+EQqv3ROKZay6JxSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5RijcdU8oll9n2Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5DPQr6MffeEYiO8GFr+qy8L6Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5DPQj4L+Szks5Av46N7QrER/pmxkM5CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkG+Ewlv3hGIZ2+4JxTKm7gnFLOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOTLuHdPKJax6Z5QLGPunlDMQj4L+Szks5DPQj4L+SzkG6Fw6TfgUxyOuWSn+RNFSAfbc4zH5wAAAABJRU5ErkJggg==">
         </div>
 
-        <div>
+        <div class="content">
             <h2>Thomas Kovarik</h2>
             <p>I am currently a high school student at David Thibodaux</p>
             <!-- Interests section -->
-            <div>
+            <div class="intrests">
                 <h3>Interests</h3>
                 <ul>
                     <li>video games</li>
