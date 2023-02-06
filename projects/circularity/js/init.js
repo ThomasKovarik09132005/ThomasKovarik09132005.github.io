@@ -40,6 +40,11 @@ drawCircle();
 drawCircle();
 drawCircle();
 
+var loopsCompleted = 0;
+for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
+    drawCircle();
+}
+
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -57,14 +62,22 @@ drawCircle();
                 physikz.updatePosition(circles [2]);
                 physikz.updatePosition(circles [3]);
                 physikz.updatePosition(circles [4]);
-            }
+            
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           
-
+           game.checkCirclePosition(circles [0]);
+           game.checkCirclePosition(circles [1]);
+           game.checkCirclePosition(circles [2]);
+           game.checkCirclePosition(circles [3]);
+           game.checkCirclePosition(circles [4]);
             // TODO 9 : Iterate over the array
            
-            
+            for (var loopsCompleted = 0; loopsCompleted < 100; loopscompleted++) {
+                var eachValue = circles[i];
+                physikz.updatePosition(circles [circles.length]);
+                game.checkCirclePosition(circles [circles.length]);
+             }
+
         }
     
         /* 
@@ -80,8 +93,18 @@ drawCircle();
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
-
+            if( circle.x < 0){
+                circle.x = canvas.width;
+            }
+//if circle goes off left side it will be placed on the right//
+            if(circle.y > canvas.hight){
+               circle.y = 0;
+            }
+//if circle goes off bottom of screen should be placed on the top //
+            if(circle.y < 0){
+               circle.y = canvas.hight;
+            }
+//if circle goes off top of screen should be placed on bottom//
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
