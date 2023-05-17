@@ -16,7 +16,7 @@ const createjs = {
 const ground = createjs.Container();
 const game = {
     ground: ground,
-    groundY: ground.y, 
+    groundY: ground.y,
     integrity: 0,
     score: 0,
     setDebugMode: function() {},
@@ -66,12 +66,14 @@ const draw = {
     textfield: function() {return {}}
 };
 
+
 const view = createjs.Container();
+
 
 const opspark = {
     app: {
-        addResizeable: function() {}, 
-        addUpdateable: function() {}, 
+        addResizeable: function() {},
+        addUpdateable: function() {},
         canvas: {height: 100, width: 100},
         view: view
     },
@@ -80,13 +82,13 @@ const opspark = {
         url: console.log,
         json: console.log
     },
-    makeApp: function() { 
+    makeApp: function() {
         return {
-            addResizeable: function() {}, 
-            addUpdateable: function() {}, 
+            addResizeable: function() {},
+            addUpdateable: function() {},
             canvas: {height: 100, width: 100},
             view: view
-        }; 
+        };
     },
     createGameManager: function() {return game},
     makeBackground: function() {return {}},
@@ -100,7 +102,7 @@ const opspark = {
     makeProjectileManager: function() {return {}},
     makeSpriteSheet: function() {return new Promise(function(resolve,reject) {})},
     racket: {
-        physikz: {}, 
+        physikz: {},
         num: {}
     },
     runLevelInGame: function() {return {}},
@@ -109,13 +111,15 @@ const opspark = {
     }
 };
 
+
 const windowMock = {
-    createjs: createjs, 
+    createjs: createjs,
     opspark: opspark,
-    backgroundChildren: [], 
+    backgroundChildren: [],
     gameItems: [],
     game: game
 };  
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

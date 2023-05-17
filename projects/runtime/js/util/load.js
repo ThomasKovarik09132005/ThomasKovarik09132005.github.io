@@ -1,6 +1,6 @@
 (function (window) {
     window.opspark = window.opspark || {};
-    
+   
     function _url (url) {
                 return new Promise(function(resolve, reject) {
                     var req = new XMLHttpRequest();
@@ -12,18 +12,18 @@
                             reject(Error(req.statusText));
                         }
                     };
-                    
+                   
                     req.onerror = function() {
                         reject(Error("Network Error"));
                     };
-                    
+                   
                     req.send();
                 });
             }
-    
+   
     window.opspark.load  = {
             url: _url ,
-            
+           
             json: function (url) {
               return _url(url).then(JSON.parse);
             }
