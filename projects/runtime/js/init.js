@@ -80,8 +80,6 @@ var init = function (window) {
     window.hud = hud;
 
 
-
-
     var game = opspark.createGameManager(app,hud);
     opspark.runLevelInGame(game);
 

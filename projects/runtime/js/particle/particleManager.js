@@ -93,4 +93,4 @@
         };
         return _particleManager;
     };
-}(window))
+}(window));

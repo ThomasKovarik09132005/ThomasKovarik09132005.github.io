@@ -130,5 +130,3 @@
         return _orbManager;
     };
 }(window));
-
-
