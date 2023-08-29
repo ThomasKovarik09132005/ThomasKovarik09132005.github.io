@@ -36,10 +36,16 @@ $(document).ready(function () {
   /////////////////////////////////////////////////
   // ALL OF YOUR CODE SHOULD GO BELOW HERE ////////
   /////////////////////////////////////////////////
-
+// TODO 0 Complete//
   // TODO 1: create a new shape object and add it to the array
-  
 
+  var shape 
+  shape = {
+    color: "blue",
+    shape: "circle",
+    repeat: 3,
+  }
+dataShapes.push(shape)
   // TODO 2: add a new property to all data shapes
   
 
@@ -86,6 +92,7 @@ $(document).ready(function () {
     const shapes = ["square", "triangle", "circle"];
     const repeats = [1, 2, 3];
 
+    
     for (var i = 0; i < colors.length; i++) {
       for (var j = 0; j < shapes.length; j++) {
         for (var k = 0; k < repeats.length; k++) {
@@ -107,6 +114,7 @@ $(document).ready(function () {
     }
 
     return data;
+        
   }
 
   // This function decrements the index of the currently selected object in the array (and resets the display type)
